@@ -221,6 +221,7 @@ a {
   margin: 0 auto;
   max-width: 1240px;
   min-height: 100%;
+  overflow: hidden;
 }
 
 .lds-ring {
@@ -494,7 +495,7 @@ a {
   background-color: #FFFFFF;
   overflow: auto;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   z-index: 1;
   transition: all 0.4s linear;
   -webkit-transition: all 0.4s linear;
