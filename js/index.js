@@ -28,7 +28,6 @@ request();
 // ****API RENDER CODES START****
 
 function ApiRender(data = []) {
-  ApiFilterChange(data);
   data.forEach(item => {
     const div = creat("div", "section__card_container_box", `
       <img
@@ -249,54 +248,42 @@ function ApiRender(data = []) {
     `);
       $(".section__card_container").appendChild(div);
     });
+
   }
   // ****API SEARCH CODES END****
 
+  const array = [];
+  data.forEach(item => {
+    if (!array.includes(item.region)) {
 
-  // ****API FILTER CHANGE START****
-
-  function ApiFilterChange(data) {
-    const array = [];
-    data.forEach(item => {
-      if (!array.includes(item.region)) {
-        array.push(item.region);
-      }
-    });
-    array.sort();
-    array.unshift("All")
-    array.forEach(item => {
-      const option = creat("option", "main__form_select-option", item);
-
-      $(".main__form_select").appendChild(option);
-    });
-  }
-
-  // ****API FILTER CHANGE END****
+      array.push(item.region);
+    }
+  });
+  array.sort();
+  array.unshift("All");
 
 
+  array.forEach(item => {
+    const option = creat("option", "main__form_select-option", item);
 
-  // ****API CHANGE VALUE START****
-  $(".main__form_select").addEventListener("change", (e) => {
-    $(".section__card_container").innerHTML = "";
-    const filerValue = e.target.value.toLowerCase();
-    sortCountry(filerValue);
+    $(".main__form_select").appendChild(option);
   });
 
 
-  async function sortCountry(region) {
+  $(".main__form_select").addEventListener("change",(e)=> {
+    sortCountry(e.target.value.toLowerCase());
+  });
+
+  async function sortCountry(datas){
     $(".section__card_container").innerHTML = "";
-    if (region == "all") {
-      const response = await fetch(`https://restcountries.com/v2/all`);
+    if(datas == "all"){
+      const response = await fetch(`https://restcountries.com/v2/all/`);
       const result = await response.json();
       ApiRender(result);
-    } else {
-      const response = await fetch(`https://restcountries.com/v2/region/${region}`);
-      const result = await response.json();
-      ApiRender(result);
+    }else {
+      console.log(false);
     }
   }
-
-  // ****API CHANGE VALUE END****
 
 }
 // ****API RENDER CODES END****
@@ -304,13 +291,13 @@ function ApiRender(data = []) {
 
 // *****DARK MODE CODES START****
 
-$(".nav__list_item-moon").addEventListener("click",(e)=> {
-  if($(".nav__list_item-moon").getAttribute("class") == "nav__list_item-moon fa fa-sun"){
+$(".nav__list_item-moon").addEventListener("click", (e) => {
+  if ($(".nav__list_item-moon").getAttribute("class") == "nav__list_item-moon fa fa-sun") {
     $("body").classList.add("dark-mode");
-    e.target.setAttribute("class","nav__list_item-moon fa fa-moon");
-  }else {
+    e.target.setAttribute("class", "nav__list_item-moon fa fa-moon");
+  } else {
     $("body").classList.remove("dark-mode");
-    e.target.setAttribute("class","nav__list_item-moon fa fa-sun");
+    e.target.setAttribute("class", "nav__list_item-moon fa fa-sun");
   }
 });
 

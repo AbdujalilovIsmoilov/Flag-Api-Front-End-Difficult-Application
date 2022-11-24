@@ -60,9 +60,10 @@
 
             margin: {
               top: 8px;
-            } 
+            }
           }
-          &-btn{
+
+          &-btn {
             background-color: $btn-bg-color;
             box-shadow: 0px 0px 7px 2px rgba(44, 44, 44, 0.029);
             border-radius: 5px;
@@ -70,21 +71,28 @@
             border: 1px solid $btn-bg-color;
             font-size: 16px;
             letter-spacing: .7px;
+
             margin: {
               top: 25px;
-            };
+            }
+
+            ;
+
             padding: {
               top: 10px;
               bottom: 10px;
               right: 15px;
               left: 15px;
-            };
+            }
+
+            ;
             transition: all .2s linear;
             -webkit-transition: all .2s linear;
             -moz-transition: all .2s linear;
             -ms-transition: all .2s linear;
             -o-transition: all .2s linear;
-            &:hover{
+
+            &:hover {
               background-color: $navbar-shadow-color;
               color: $btn-bg-color;
             }
@@ -108,6 +116,7 @@
     -ms-transition: all .4s linear;
     -o-transition: all .4s linear;
     left: 100%;
+
     &-btn {
       background-color: $navbar-shadow-color;
       box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
@@ -188,7 +197,7 @@
       }
 
       &_buttons {
-        @include Grid(grid, flex-start,repeat(4,auto), center, 15px, row);
+        @include Grid(grid, flex-start, repeat(4, auto), center, 15px, row);
 
         margin: {
           top: 40px;
@@ -229,36 +238,36 @@
   }
 }
 
-@media only screen and (max-width: 1150px){
-  .section{
+@media only screen and (max-width: 1150px) {
+  .section {
     &__card {
       &-title {
         text-align: center;
-  
+
         margin: {
           top: 50px;
           bottom: 50px;
         }
       }
-  
+
       &_container {
         @include Grid(grid, space-between, repeat(3, auto), center, 0, row);
-  
+
         margin: {
           top: 48px;
         }
-  
+
         &_box {
           background-color: $navbar-shadow-color;
           box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
           border-radius: 5px;
           min-height: 336px;
           max-width: 264px;
-  
+
           margin: {
             bottom: 68px;
           }
-  
+
           &-img {
             border-radius: 5px 5px 0 0;
             -webkit-border-radius: 5px 5px 0 0;
@@ -268,7 +277,7 @@
             height: 160px;
             width: 100%;
           }
-  
+
           &_body {
             padding: {
               left: 24px;
@@ -276,25 +285,26 @@
               bottom: 24px;
               right: 24px;
             }
-  
+
             &-title {
               font-weight: 800;
               font-size: 18px;
               line-height: 26px;
               color: $intro-text-color;
             }
-  
+
             &-text {
               font-weight: 600;
               font-size: 14px;
               line-height: 16px;
               color: $intro-text-color;
-  
+
               margin: {
                 top: 8px;
-              } 
+              }
             }
-            &-btn{
+
+            &-btn {
               background-color: $btn-bg-color;
               box-shadow: 0px 0px 7px 2px rgba(44, 44, 44, 0.029);
               border-radius: 5px;
@@ -302,21 +312,28 @@
               border: 1px solid $btn-bg-color;
               font-size: 16px;
               letter-spacing: .7px;
+
               margin: {
                 top: 25px;
-              };
+              }
+
+              ;
+
               padding: {
                 top: 10px;
                 bottom: 10px;
                 right: 15px;
                 left: 15px;
-              };
+              }
+
+              ;
               transition: all .2s linear;
               -webkit-transition: all .2s linear;
               -moz-transition: all .2s linear;
               -ms-transition: all .2s linear;
               -o-transition: all .2s linear;
-              &:hover{
+
+              &:hover {
                 background-color: $navbar-shadow-color;
                 color: $btn-bg-color;
               }
@@ -329,36 +346,36 @@
 }
 
 
-@media only screen and (max-width: 870px){
-  .section{
+@media only screen and (max-width: 870px) {
+  .section {
     &__card {
       &-title {
         text-align: center;
-  
+
         margin: {
           top: 50px;
           bottom: 50px;
         }
       }
-  
+
       &_container {
         @include Grid(grid, space-between, repeat(2, auto), center, 0, row);
-  
+
         margin: {
           top: 48px;
         }
-  
+
         &_box {
           background-color: $navbar-shadow-color;
           box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
           border-radius: 5px;
           min-height: 336px;
           max-width: 264px;
-  
+
           margin: {
             bottom: 68px;
           }
-  
+
           &-img {
             border-radius: 5px 5px 0 0;
             -webkit-border-radius: 5px 5px 0 0;
@@ -368,7 +385,7 @@
             height: 160px;
             width: 100%;
           }
-  
+
           &_body {
             padding: {
               left: 24px;
@@ -376,25 +393,26 @@
               bottom: 24px;
               right: 24px;
             }
-  
+
             &-title {
               font-weight: 800;
               font-size: 18px;
               line-height: 26px;
               color: $intro-text-color;
             }
-  
+
             &-text {
               font-weight: 600;
               font-size: 14px;
               line-height: 16px;
               color: $intro-text-color;
-  
+
               margin: {
                 top: 8px;
-              } 
+              }
             }
-            &-btn{
+
+            &-btn {
               background-color: $btn-bg-color;
               box-shadow: 0px 0px 7px 2px rgba(44, 44, 44, 0.029);
               border-radius: 5px;
@@ -402,21 +420,28 @@
               border: 1px solid $btn-bg-color;
               font-size: 16px;
               letter-spacing: .7px;
+
               margin: {
                 top: 25px;
-              };
+              }
+
+              ;
+
               padding: {
                 top: 10px;
                 bottom: 10px;
                 right: 15px;
                 left: 15px;
-              };
+              }
+
+              ;
               transition: all .2s linear;
               -webkit-transition: all .2s linear;
               -moz-transition: all .2s linear;
               -ms-transition: all .2s linear;
               -o-transition: all .2s linear;
-              &:hover{
+
+              &:hover {
                 background-color: $navbar-shadow-color;
                 color: $btn-bg-color;
               }
@@ -428,17 +453,19 @@
   }
 }
 
-@media only screen and (max-width: 725px){
+@media only screen and (max-width: 725px) {
   .main {
     &__form {
       @include flexbox(flex, center, center, stretch, row);
       flex-wrap: wrap;
+
       margin: {
         top: 48px;
       }
+
       &_label {
         position: relative;
-  
+
         &-icon {
           color: $input-color;
           font-size: 20px;
@@ -446,7 +473,7 @@
           left: 30px;
           top: 20px;
         }
-  
+
         &-search {
           height: 56px;
           width: 500px;
@@ -461,13 +488,14 @@
           color: $input-color;
           text-indent: 75px;
           letter-spacing: .7px;
+
           margin: {
             bottom: 25px;
           }
         }
 
       }
-  
+
       &_select {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
@@ -479,26 +507,26 @@
         height: 56px;
         width: 500px;
         border: 1px solid $navbar-shadow-color;
-  
+
         padding: {
           left: 24px;
           right: 24px;
         }
-  
+
         letter-spacing: .7px;
         outline: none;
-  
+
         &-option {
           background: $navbar-shadow-color;
           box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
           border-radius: 5px;
           border: none;
-  
+
           padding: {
             top: 8px;
             bottom: 8px;
           }
-  
+
           margin: 10px 0;
           font-weight: 400;
           font-size: 14px;
@@ -510,26 +538,26 @@
   }
 }
 
-@media only screen and (max-width: 640px){
-  .section{
+@media only screen and (max-width: 640px) {
+  .section {
     &__modal {
       &-btn {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
         border-radius: 6px;
-  
+
         padding: {
           top: 10px;
           bottom: 10px;
           right: 40px;
           left: 40px;
         }
-  
+
         margin: {
           top: 40px;
           bottom: 50px;
         }
-  
+
         border: 1px solid $navbar-shadow-color;
         font-weight: 300;
         font-size: 16px;
@@ -537,52 +565,52 @@
         letter-spacing: .75px;
         @include flexbox(flex, space-between, center, 15px, row);
       }
-  
+
       &_container {
         @include flexbox(flex, stretch, flex-start, 100px, row);
         flex-wrap: wrap;
-  
+
         &_box {
           &_fluid {
             @include Grid(grid, space-between, repeat(2, auto), flex-start, stretch, row);
             flex-wrap: wrap;
             width: 500px;
-  
+
             &_small {
               &-title {
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 44px;
                 color: $intro-text-color;
-  
+
                 margin: {
                   bottom: 25px;
                   top: 25px;
                 }
-  
+
                 ;
               }
-  
+
               &_text {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 32px;
                 color: $intro-text-color;
-  
+
                 &-span {
                   font-weight: 600;
                   color: $intro-text-color;
                 }
               }
             }
-  
+
             &_small:nth-child(2) {
               margin: {
                 top: 95px;
               }
             }
           }
-  
+
           &-img {
             width: 500px;
             height: 350px;
@@ -591,21 +619,21 @@
             border-radius: 10.0057px;
           }
         }
-  
+
         &_buttons {
           @include flexbox(flex, flex-start, center, 15px, row);
-  
+
           margin: {
             top: 40px;
           }
-  
+
           &-title {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: $intro-text-color;
           }
-  
+
           &-btn {
             font-weight: 300;
             font-size: 14px;
@@ -618,14 +646,14 @@
             -moz-border-radius: 2px;
             -ms-border-radius: 2px;
             -o-border-radius: 2px;
-  
+
             padding: {
               top: 5px;
               bottom: 5px;
               right: 28px;
               left: 28px;
             }
-  
+
             ;
             border: 1px solid $navbar-shadow-color;
           }
@@ -635,26 +663,26 @@
   }
 }
 
-@media only screen and (max-width: 620px){
-  .section{
+@media only screen and (max-width: 620px) {
+  .section {
     &__modal {
       &-btn {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
         border-radius: 6px;
-  
+
         padding: {
           top: 10px;
           bottom: 10px;
           right: 40px;
           left: 40px;
         }
-  
+
         margin: {
           top: 40px;
           bottom: 50px;
         }
-  
+
         border: 1px solid $navbar-shadow-color;
         font-weight: 300;
         font-size: 16px;
@@ -662,51 +690,52 @@
         letter-spacing: .75px;
         @include flexbox(flex, space-between, center, 15px, row);
       }
-  
+
       &_container {
         @include flexbox(flex, stretch, flex-start, 100px, row);
         flex-wrap: wrap;
-  
+
         &_box {
           &_fluid {
             @include Grid(grid, space-between, auto, flex-start, stretch, row);
             flex-wrap: wrap;
             width: 600px;
-  
+
             &_small {
-            
+
               &-title {
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 44px;
                 color: $intro-text-color;
-  
+
                 margin: {
                   bottom: 25px;
                   top: 25px;
                 }
-  
+
               }
-  
+
               &_text {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 32px;
                 color: $intro-text-color;
+
                 &-span {
                   font-weight: 600;
                   color: $intro-text-color;
                 }
               }
             }
-  
+
             &_small:nth-child(2) {
               margin: {
                 top: 95px;
               }
             }
           }
-  
+
           &-img {
             width: 300px;
             height: 200px;
@@ -715,21 +744,22 @@
             border-radius: 10.0057px;
           }
         }
-  
+
         &_buttons {
-          @include Grid(grid, flex-start,auto, center, 15px, row);
+          @include Grid(grid, flex-start, auto, center, 15px, row);
+
           margin: {
             top: 40px;
           }
-  
+
           &-title {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: $intro-text-color;
- 
+
           }
-  
+
           &-btn {
             font-weight: 300;
             font-size: 14px;
@@ -742,13 +772,14 @@
             -moz-border-radius: 2px;
             -ms-border-radius: 2px;
             -o-border-radius: 2px;
-  
+
             padding: {
               top: 5px;
               bottom: 5px;
               right: 28px;
               left: 28px;
             }
+
             border: 1px solid $navbar-shadow-color;
           }
         }
@@ -757,36 +788,36 @@
   }
 }
 
-@media only screen and (max-width: 585px){
-  .section{
+@media only screen and (max-width: 585px) {
+  .section {
     &__card {
       &-title {
         text-align: center;
-  
+
         margin: {
           top: 50px;
           bottom: 50px;
         }
       }
-  
+
       &_container {
         @include Grid(grid, center, auto, center, 0, row);
-  
+
         margin: {
           top: 48px;
         }
-  
+
         &_box {
           background-color: $navbar-shadow-color;
           box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
           border-radius: 5px;
           min-height: 336px;
           max-width: 264px;
-  
+
           margin: {
             bottom: 34px;
           }
-  
+
           &-img {
             border-radius: 5px 5px 0 0;
             -webkit-border-radius: 5px 5px 0 0;
@@ -796,7 +827,7 @@
             height: 160px;
             width: 100%;
           }
-  
+
           &_body {
             padding: {
               left: 24px;
@@ -804,25 +835,26 @@
               bottom: 24px;
               right: 24px;
             }
-  
+
             &-title {
               font-weight: 800;
               font-size: 18px;
               line-height: 26px;
               color: $intro-text-color;
             }
-  
+
             &-text {
               font-weight: 600;
               font-size: 14px;
               line-height: 16px;
               color: $intro-text-color;
-  
+
               margin: {
                 top: 8px;
-              } 
+              }
             }
-            &-btn{
+
+            &-btn {
               background-color: $btn-bg-color;
               box-shadow: 0px 0px 7px 2px rgba(44, 44, 44, 0.029);
               border-radius: 5px;
@@ -830,21 +862,28 @@
               border: 1px solid $btn-bg-color;
               font-size: 16px;
               letter-spacing: .7px;
+
               margin: {
                 top: 25px;
-              };
+              }
+
+              ;
+
               padding: {
                 top: 10px;
                 bottom: 10px;
                 right: 15px;
                 left: 15px;
-              };
+              }
+
+              ;
               transition: all .2s linear;
               -webkit-transition: all .2s linear;
               -moz-transition: all .2s linear;
               -ms-transition: all .2s linear;
               -o-transition: all .2s linear;
-              &:hover{
+
+              &:hover {
                 background-color: $navbar-shadow-color;
                 color: $btn-bg-color;
               }
@@ -856,26 +895,26 @@
   }
 }
 
-@media only screen and (max-width: 570px){
-  .section{
+@media only screen and (max-width: 570px) {
+  .section {
     &__modal {
       &-btn {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
         border-radius: 6px;
-  
+
         padding: {
           top: 10px;
           bottom: 10px;
           right: 40px;
           left: 40px;
         }
-  
+
         margin: {
           top: 40px;
           bottom: 50px;
         }
-  
+
         border: 1px solid $navbar-shadow-color;
         font-weight: 300;
         font-size: 16px;
@@ -883,51 +922,51 @@
         letter-spacing: .75px;
         @include flexbox(flex, space-between, center, 15px, row);
       }
-  
+
       &_container {
         @include flexbox(flex, stretch, flex-start, 0, row);
         flex-wrap: wrap;
-  
+
         &_box {
           &_fluid {
             @include Grid(grid, space-between, auto, flex-start, stretch, row);
             flex-wrap: wrap;
             width: 600px;
-  
+
             &_small {
               &-title {
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 44px;
                 color: $intro-text-color;
-  
+
                 margin: {
                   bottom: 25px;
                   top: 25px;
                 }
-  
+
               }
-  
+
               &_text {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 32px;
                 color: $intro-text-color;
-  
+
                 &-span {
                   font-weight: 600;
                   color: $intro-text-color;
                 }
               }
             }
-  
+
             &_small:nth-child(2) {
               margin: {
                 top: 95px;
               }
             }
           }
-  
+
           &-img {
             width: 300px;
             height: 200px;
@@ -936,21 +975,21 @@
             border-radius: 10.0057px;
           }
         }
-  
+
         &_buttons {
-          @include Grid(grid, flex-start,auto, center, 15px, row);
-  
+          @include Grid(grid, flex-start, auto, center, 15px, row);
+
           margin: {
             top: 40px;
           }
-  
+
           &-title {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: $intro-text-color;
           }
-  
+
           &-btn {
             font-weight: 300;
             font-size: 14px;
@@ -963,13 +1002,14 @@
             -moz-border-radius: 2px;
             -ms-border-radius: 2px;
             -o-border-radius: 2px;
-  
+
             padding: {
               top: 5px;
               bottom: 5px;
               right: 28px;
               left: 28px;
             }
+
             border: 1px solid $navbar-shadow-color;
           }
         }
@@ -978,26 +1018,26 @@
   }
 }
 
-@media only screen and (max-width: 540px){
-  .section{
+@media only screen and (max-width: 540px) {
+  .section {
     &__modal {
       &-btn {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
         border-radius: 6px;
-  
+
         padding: {
           top: 10px;
           bottom: 10px;
           right: 40px;
           left: 40px;
         }
-  
+
         margin: {
           top: 40px;
           bottom: 50px;
         }
-  
+
         border: 1px solid $navbar-shadow-color;
         font-weight: 300;
         font-size: 16px;
@@ -1005,51 +1045,51 @@
         letter-spacing: .75px;
         @include flexbox(flex, space-between, center, 15px, row);
       }
-  
+
       &_container {
         @include flexbox(flex, stretch, flex-start, 0, row);
         flex-wrap: wrap;
-  
+
         &_box {
           &_fluid {
-            @include Grid(grid, space-between, auto,flex-start, stretch, row);
+            @include Grid(grid, space-between, auto, flex-start, stretch, row);
             flex-wrap: wrap;
             width: 600px;
-  
+
             &_small {
               &-title {
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 44px;
                 color: $intro-text-color;
-  
+
                 margin: {
                   bottom: 25px;
                   top: 25px;
                 }
-  
+
               }
-  
+
               &_text {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 32px;
                 color: $intro-text-color;
-  
+
                 &-span {
                   font-weight: 600;
                   color: $intro-text-color;
                 }
               }
             }
-  
+
             &_small:nth-child(2) {
               margin: {
                 top: 95px;
               }
             }
           }
-  
+
           &-img {
             width: 300px;
             height: 200px;
@@ -1058,21 +1098,21 @@
             border-radius: 10.0057px;
           }
         }
-  
+
         &_buttons {
-          @include Grid(grid, flex-start,auto, center, 15px, row);
-  
+          @include Grid(grid, flex-start, auto, center, 15px, row);
+
           margin: {
             top: 40px;
           }
-  
+
           &-title {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: $intro-text-color;
           }
-  
+
           &-btn {
             font-weight: 300;
             font-size: 14px;
@@ -1085,14 +1125,14 @@
             -moz-border-radius: 2px;
             -ms-border-radius: 2px;
             -o-border-radius: 2px;
-  
+
             padding: {
               top: 5px;
               bottom: 5px;
               right: 28px;
               left: 28px;
             }
-  
+
             ;
             border: 1px solid $navbar-shadow-color;
           }
@@ -1102,17 +1142,19 @@
   }
 }
 
-@media only screen and (max-width: 535px){
+@media only screen and (max-width: 535px) {
   .main {
     &__form {
       @include flexbox(flex, center, center, stretch, row);
       flex-wrap: wrap;
+
       margin: {
         top: 48px;
       }
+
       &_label {
         position: relative;
-  
+
         &-icon {
           color: $input-color;
           font-size: 20px;
@@ -1120,7 +1162,7 @@
           left: 30px;
           top: 20px;
         }
-  
+
         &-search {
           height: 56px;
           width: 350px;
@@ -1135,13 +1177,14 @@
           color: $input-color;
           text-indent: 75px;
           letter-spacing: .7px;
+
           margin: {
             bottom: 25px;
           }
         }
 
       }
-  
+
       &_select {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
@@ -1153,26 +1196,26 @@
         height: 56px;
         width: 350px;
         border: 1px solid $navbar-shadow-color;
-  
+
         padding: {
           left: 24px;
           right: 24px;
         }
-  
+
         letter-spacing: .7px;
         outline: none;
-  
+
         &-option {
           background: $navbar-shadow-color;
           box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
           border-radius: 5px;
           border: none;
-  
+
           padding: {
             top: 8px;
             bottom: 8px;
           }
-  
+
           margin: 10px 0;
           font-weight: 400;
           font-size: 14px;
@@ -1184,37 +1227,39 @@
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   .nav {
     @include flexbox(flex, space-between, center, stretch, row);
     height: 80px;
-  
+
     &-intro {
       font-weight: 800;
       font-size: 18px;
       line-height: 33px;
       color: $intro-text-color;
     }
-  
+
     &__list {
       &_item {
         display: flex;
         align-items: center;
         gap: 10px;
-  
+
         @include flexbox(flex, stretch, center, 10px, row);
-  
+
         &-moon {
           font-size: 16px;
           cursor: pointer;
-          &.fa-sun{
+
+          &.fa-sun {
             color: $sun-color;
           }
-          &.fa-moon{
+
+          &.fa-moon {
             color: $navbar-shadow-color;
           }
         }
-  
+
         &-text {
           font-weight: 600;
           font-size: 16px;
@@ -1226,17 +1271,19 @@
   }
 }
 
-@media only screen and (max-width: 385px){
+@media only screen and (max-width: 385px) {
   .main {
     &__form {
       @include flexbox(flex, center, center, stretch, row);
       flex-wrap: wrap;
+
       margin: {
         top: 48px;
       }
+
       &_label {
         position: relative;
-  
+
         &-icon {
           color: $input-color;
           font-size: 20px;
@@ -1244,7 +1291,7 @@
           left: 30px;
           top: 20px;
         }
-  
+
         &-search {
           height: 56px;
           width: 300px;
@@ -1259,13 +1306,14 @@
           color: $input-color;
           text-indent: 75px;
           letter-spacing: .7px;
+
           margin: {
             bottom: 25px;
           }
         }
 
       }
-  
+
       &_select {
         background-color: $navbar-shadow-color;
         box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
@@ -1277,26 +1325,26 @@
         height: 56px;
         width: 300px;
         border: 1px solid $navbar-shadow-color;
-  
+
         padding: {
           left: 24px;
           right: 24px;
         }
-  
+
         letter-spacing: .7px;
         outline: none;
-  
+
         &-option {
           background: $navbar-shadow-color;
           box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
           border-radius: 5px;
           border: none;
-  
+
           padding: {
             top: 8px;
             bottom: 8px;
           }
-  
+
           margin: 10px 0;
           font-weight: 400;
           font-size: 14px;
